@@ -23,7 +23,7 @@ import java.util.Properties;
 @ComponentScan(value = "web")
 public class DatabaseConfig {
 
-    private Environment environment;
+    private final Environment environment;
 
     @Autowired
     public DatabaseConfig(Environment environment) {
